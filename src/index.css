@@ -5,6 +5,7 @@
   --primary-transparent-mode-color: #ccc;
   --secondary-mode-color: #000;
   --secondary-transparent-mode-color: #222222;
+  --hover: #f2f2f2;
   --primary-color: rgba(44, 168, 224, 1);
   --primary-transparent-color: rgba(44, 168, 224, 0.65);
   --secondary-color: rgba(248, 177, 137, 1);
@@ -39,6 +40,7 @@ body.dark-mode {
   --primary-transparent-mode-color: #222;
   --secondary-mode-color: #fff;
   --secondary-transparent-mode-color: #ccc;
+  --hover: #272727;
   color: white;
 }
 

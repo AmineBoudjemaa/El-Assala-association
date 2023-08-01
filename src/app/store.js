@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import studentsReducer from '../features/studentsSlice'
-import sidebarReducer from '../features/sidebarSlice'
+import categoriesReducer from '../features/categoriesSlice'
 
 export const store = configureStore({
   reducer: {
     students: studentsReducer,
-    sidebar: sidebarReducer
+    categories: categoriesReducer
   },
 });

@@ -1,0 +1,7 @@
+.sittings.dropdown {
+  right: -10px;
+}
+
+.sittings.dropdown:before {
+  right: -5px;
+}

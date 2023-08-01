@@ -188,131 +188,113 @@
       "id": 19
     }
   ],
-  "sidebar": {
-    "CP": [
-      {
-        "title": "CP 1",
-        "path": "CP1",
-        "subItems": []
-      },
-      {
-        "title": "CP 2",
-        "path": "CP2",
-        "subItems": []
-      }
-    ],
-    "primaire": [
-      {
-        "title": "A1",
-        "subItems": [
-          "math",
-          "physic"
-        ]
-      },
-      {
-        "title": "A2 ",
-        "subItems": [
-          "Sub CEM 3",
-          "Sub CEM 4"
-        ]
-      },
-      {
-        "title": "A3",
-        "subItems": [
-          "Sub CEM 5",
-          "Sub CEM 6"
-        ]
-      },
-      {
-        "title": "A4",
-        "subItems": [
-          "Sub CEM 5",
-          "Sub CEM 6"
-        ]
-      },
-      {
-        "title": "A5",
-        "subItems": [
-          "Sub CEM 5",
-          "Sub CEM 6"
-        ]
-      }
-    ],
-    "CEM": [
-      {
-        "title": "A1",
-        "subItems": [
-          "Math",
-          "Physic"
-        ]
-      },
-      {
-        "title": "A2",
-        "subItems": [
-          "Physic",
-          "Sub CEM 4"
-        ]
-      },
-      {
-        "title": "A3",
-        "subItems": [
-          "Science"
-        ]
-      },
-      {
-        "title": "A4",
-        "subItems": [
-          "Sub CEM 5",
-          "Sub CEM 6"
-        ]
-      }
-    ],
-    "lycee": [
-      {
-        "title": "A1",
-        "subItems": [
-          "math",
-          "physic"
-        ]
-      },
-      {
-        "title": "A2 ",
-        "subItems": [
-          "Sub CEM 3",
-          "Sub CEM 4"
-        ]
-      },
-      {
-        "title": "A3",
-        "subItems": [
-          "Sub CEM 5",
-          "Sub CEM 6"
-        ]
-      }
-    ],
-    "qoran": [
-      {
-        "title": "qoran",
-        "path": "qoran",
-        "subItems": []
-      }
-    ],
-    "languages": [
-      {
-        "title": "english",
-        "path": "english",
-        "subItems": []
-      },
-      {
-        "title": "francais ",
-        "path": "francais ",
-        "subItems": []
-      },
-      {
-        "title": "allemand",
-        "path": "allemand",
-        "subItems": []
-      }
-    ]
-  }
+  "categories": [
+    {
+      "category": "qoran",
+      "niveaux": [
+        {
+          "title": "qoran",
+          "path": "qoran",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "category": "CP",
+      "niveaux": [
+        {
+          "title": "CP 1",
+          "path": "CP1",
+          "subItems": []
+        },
+        {
+          "title": "CP 2",
+          "path": "CP2",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "category": "primaire",
+      "niveaux": [
+        {
+          "title": "A1",
+          "subItems": ["math", "physic"]
+        },
+        {
+          "title": "A2 ",
+          "subItems": ["Sub CEM 3", "Sub CEM 4"]
+        },
+        {
+          "title": "A3",
+          "subItems": ["Sub CEM 5", "Sub CEM 6"]
+        },
+        {
+          "title": "A4",
+          "subItems": ["Sub CEM 5", "Sub CEM 6"]
+        },
+        {
+          "title": "A5",
+          "subItems": ["Sub CEM 5", "Sub CEM 6"]
+        }
+      ]
+    },
+    {
+      "category": "CEM",
+      "niveaux": [
+        {
+          "title": "english",
+          "path": "english",
+          "subItems": []
+        },
+        {
+          "title": "francais ",
+          "path": "francais ",
+          "subItems": []
+        },
+        {
+          "title": "allemand",
+          "path": "allemand",
+          "subItems": []
+        }
+      ]
+    },
+    {
+      "category": "lycee",
+      "niveaux": [
+        {
+          "title": "A1",
+          "subItems": ["math", "physic"]
+        },
+        {
+          "title": "A2 ",
+          "subItems": ["Sub CEM 3", "Sub CEM 4"]
+        },
+        {
+          "title": "A3",
+          "subItems": ["Sub CEM 5", "Sub CEM 6"]
+        }
+      ]
+    },
+    {
+      "category": "languages",
+      "niveaux": [
+        {
+          "title": "english",
+          "path": "english",
+          "subItems": []
+        },
+        {
+          "title": "francais ",
+          "path": "francais ",
+          "subItems": []
+        },
+        {
+          "title": "allemand",
+          "path": "allemand",
+          "subItems": []
+        }
+      ]
+    }
+  ]
 }

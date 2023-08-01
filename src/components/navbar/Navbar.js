@@ -1,14 +1,11 @@
-import { useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
 import {
   useDarkMode,
-  useDropdown,
 } from "../../customHooks/customHooks";
 import "./navbar.css";
 import NotificationButton from "./NotificationButton";
 import SittingsButton from "./SittingsButton";
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   const [, setDarkMode] = useDarkMode();
 
   const handleInputChange = (e) => {
@@ -23,10 +20,11 @@ const Navbar = () => {
             <button
               className="toggle-sidebar-btn"
               id="toggle-sidebar-btn"
+              onClick={toggleSidebar}
             >
               <i className="fas fa-bars"></i>
             </button>
-            <h1 className="logo">Logo</h1>
+            <h2 className="logo">Logo</h2>
           </div>
           <div className="search-bar">
             <div className="wrap">
@@ -35,19 +33,21 @@ const Navbar = () => {
                 placeholder="Search customers..."
                 onChange={handleInputChange}
               />
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i className="fa-solid fa-magnifying-glass"></i>
             </div>
           </div>
-          <div className="navbar-buttons">
-            <button
-              className="mode-switch-btn"
-              onClick={() => setDarkMode((prevDarkMode) => !prevDarkMode)}
-            >
-              <i className="fas fa-moon"></i>
-            </button>
+          <ul className="navbar-buttons">
+            <li>
+              <button
+                className="mode-switch-btn"
+                onClick={() => setDarkMode((prevDarkMode) => !prevDarkMode)}
+              >
+                <i className="fas fa-moon"></i>
+              </button>
+            </li>
             <NotificationButton />
             <SittingsButton />
-          </div>
+          </ul>
           <div className="navbar-toggle">
             <span></span>
             <span></span>

@@ -5,10 +5,10 @@ import App from './App';
 import { store } from "./app/store";
 import { Provider } from "react-redux";
 import { fetchStudents } from './features/studentsSlice';
-import { fetchSidebar } from './features/sidebarSlice';
+import { fetchCategories } from './features/categoriesSlice';
 
 store.dispatch(fetchStudents());
-store.dispatch(fetchSidebar());
+store.dispatch(fetchCategories());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

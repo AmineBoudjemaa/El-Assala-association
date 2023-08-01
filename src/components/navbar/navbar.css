@@ -5,13 +5,14 @@
   justify-content: space-between;
   padding: 0 20px;
   position: relative;
+  height: 60px;
 }
 
 .navbar-brand {
   display: flex;
 }
 .navbar-brand .logo {
-  margin-left: 20px;
+  margin: 0 0 0 40px;
 }
 
 .navbar-brand .toggle-sidebar-btn {
@@ -31,6 +32,7 @@
 .search-bar {
   flex: 1; /*  Make the search bar grow to fill available space */
   position: relative;
+  margin: 0px 70px;
 }
 
 .search-bar .wrap {
