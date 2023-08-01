@@ -43,50 +43,9 @@ aside {
   border-radius: 10px;
 }
 
-.sidebar-menu a span i,
-.sidebar-menu div span i {
+.sidebar-menu a span i{
   margin-right: 10px;
 }
-
-/* Submenu styles */
-.sub-menu {
-  list-style: none;
-  padding: 0;
-  /* display: none; Hide submenus by default */
-}
-
-.sub-menu li {
-  margin-bottom: 4px;
-  margin-left: 20px;
-}
-
-.sub-menu a {
-  color: #f1f1f1;
-  text-decoration: none;
-  padding-left: 20px;
-}
-
-/* Show submenus that have the "active" class */
-.sub-menu.active {
-  display: block;
-}
-
-.sidebar.collapsed {
-  width: 50px; /* Set the collapsed width of the sidebar */
-  padding: 0 5px;
-}
-
-.sidebar.collapsed h2,
-.sidebar.collapsed .fa-solid.fa-angle-down {
-  display: none;
-  
-}
-
-.sidebar.collapsed .sidebar-menu {
-  padding-top: 60px;
-}
-
-
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   .sidebar {

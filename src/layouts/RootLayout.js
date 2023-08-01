@@ -10,7 +10,7 @@ export default function RootLayout() {
   return (
     <div className="root-layout">
       <Navbar toggleSidebar={toggle} />
-      {isOpen && <Sidebar toggleSidebar={toggle} isSidebarOpen={isOpen} modalContentRef={modalContentRef}/>}
+      <Sidebar toggleSidebar={toggle} isSidebarOpen={isOpen} modalContentRef={modalContentRef} />
       <Outlet />
     </div>
   );
