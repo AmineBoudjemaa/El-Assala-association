@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary-mode-color: #fff;
+  --primary-transparent-mode-color: #ccc;
+  --secondary-mode-color: #000;
+  --secondary-transparent-mode-color: #222222;
+  --primary-color: rgba(44, 168, 224, 1);
+  --primary-transparent-color: rgba(44, 168, 224, 0.65);
+  --secondary-color: rgba(248, 177, 137, 1);
+  --secondary-transparent-color: rgba(248, 177, 137, 0.65);
+  --text-color: rgba(5, 23, 31, 1);
+  --main-transition: 0.3s;
+  --section-padding: 100px;
+  --delete: #d50000;
+  --edit: #4caf50;
+  --main-duration: 0.3s;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  background-color: #f2f2f2;
+}
+
+body.dark-mode {
+  --primary-mode-color: #000;
+  --primary-transparent-mode-color: #222;
+  --secondary-mode-color: #fff;
+  --secondary-transparent-mode-color: #ccc;
+  color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+i {
+  color: var(--secondary-mode-color);
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* ################################## Main content ################################## */
+
+.content {
+  padding: 20px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: margin-left 0.3s ease;
+}
+
+.content.full-screen {
+  margin-left: 50px;
+}
+
+.content section {
+  width: 100%;
+}
+
+.content section > h1 {
+  text-align: center;
+  margin: 20px auto;
+}
