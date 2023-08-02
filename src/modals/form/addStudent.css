@@ -15,7 +15,7 @@
   transform: translate(-50%, -50%);
   width: 400px;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--primary-transparent-mode-color);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
