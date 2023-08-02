@@ -186,11 +186,24 @@
       "type": "CP",
       "level": "CP1",
       "id": 19
+    },
+    {
+      "firstName": "ssss",
+      "lastName": "sbb",
+      "birthday": "2023-08-23",
+      "monthsPurchased": 3,
+      "nextPaymentDate": "2023-08-12",
+      "phoneNumber": "44444444444444",
+      "type": "CEM",
+      "level": "A1",
+      "id": 20
     }
   ],
   "categories": [
     {
       "category": "qoran",
+      "path": "qoran",
+      "icon": "fa-solid fa-book-quran",
       "niveaux": [
         {
           "title": "qoran",
@@ -201,6 +214,8 @@
     },
     {
       "category": "CP",
+      "path": "CP",
+      "icon": "fa-solid fa-puzzle-piece",
       "niveaux": [
         {
           "title": "CP 1",
@@ -216,68 +231,117 @@
     },
     {
       "category": "primaire",
+      "path": "primaire",
+      "icon": "fa-solid fa-school-flag",
       "niveaux": [
         {
           "title": "A1",
-          "subItems": ["math", "physic"]
+          "subItems": [
+            "math",
+            "physic"
+          ]
         },
         {
           "title": "A2 ",
-          "subItems": ["Sub CEM 3", "Sub CEM 4"]
+          "subItems": [
+            " CEM 3",
+            " CEM 4"
+          ]
         },
         {
           "title": "A3",
-          "subItems": ["Sub CEM 5", "Sub CEM 6"]
+          "subItems": [
+            "Sub CEM 5",
+            "Sub CEM 6"
+          ]
         },
         {
           "title": "A4",
-          "subItems": ["Sub CEM 5", "Sub CEM 6"]
+          "subItems": [
+            "Sub CEM 5",
+            "Sub CEM 6"
+          ]
         },
         {
           "title": "A5",
-          "subItems": ["Sub CEM 5", "Sub CEM 6"]
+          "subItems": [
+            "Sub CEM 5",
+            "Sub CEM 6"
+          ]
         }
       ]
     },
     {
       "category": "CEM",
+      "path": "CEM",
+      "icon": "fa-solid fa-school",
       "niveaux": [
         {
-          "title": "english",
-          "path": "english",
-          "subItems": []
+          "title": "A1",
+          "path": "A1",
+          "subItems": [
+            "math",
+            "physic"
+          ]
         },
         {
-          "title": "francais ",
-          "path": "francais ",
-          "subItems": []
+          "title": "A2 ",
+          "path": "A2",
+          "subItems": [
+            " CEM 3",
+            " CEM 4"
+          ]
         },
         {
-          "title": "allemand",
-          "path": "allemand",
-          "subItems": []
+          "title": "A3",
+          "path": "A3",
+          "subItems": [
+            "Sub CEM 5",
+            "Sub CEM 6"
+          ]
+        },
+        {
+          "title": "A4",
+          "path": "A4",
+          "subItems": [
+            "Sub CEM 5",
+            "Sub CEM 6"
+          ]
         }
       ]
     },
     {
       "category": "lycee",
+      "path": "lycee",
+      "icon": "fa-solid fa-graduation-cap",
       "niveaux": [
         {
           "title": "A1",
-          "subItems": ["math", "physic"]
+          "subItems": [
+            "math",
+            "physic"
+          ]
         },
         {
           "title": "A2 ",
-          "subItems": ["Sub CEM 3", "Sub CEM 4"]
+          "subItems": [
+            "Sub CEM 3",
+            "Sub CEM 4"
+          ]
         },
         {
           "title": "A3",
-          "subItems": ["Sub CEM 5", "Sub CEM 6"]
+          "subItems": [
+            "Sub CEM 5",
+            "Sub CEM 6"
+          ]
         }
       ]
     },
     {
       "category": "languages",
+      "path": "languages",
+      "icon": "fa-solid fa-language",
       "niveaux": [
         {
           "title": "english",

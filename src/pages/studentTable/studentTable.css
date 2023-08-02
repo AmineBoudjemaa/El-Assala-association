@@ -1,0 +1,59 @@
+/*################################## Styling the customer table ##################################*/
+.customer-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customer-table thead {
+  position: relative;
+  z-index: -1;
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 10px 20px 10px 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+thead th {
+  cursor: pointer;
+  position: relative;
+}
+
+thead th .sort-icon {
+  position: absolute;
+  right: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+thead th.sorted-asc .sort-icon {
+  transform: rotate(180deg);
+}
+
+thead th.sorted-desc .sort-icon {
+  transform: rotate(0deg);
+}
+
+.customer-table td button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-btn i{
+  color: var(--edit); /* Blue color for edit icon */
+  margin-right: 10px;
+}
+
+.delete-btn i{
+  color: var(--delete); /* Red color for delete icon */
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+  }
+}

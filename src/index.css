@@ -3,6 +3,7 @@
 :root {
   --primary-mode-color: #fff;
   --primary-transparent-mode-color: #ccc;
+  /* --primary-transparent-mode-color: #; */
   --secondary-mode-color: #000;
   --secondary-transparent-mode-color: #222222;
   --hover: #f2f2f2;
@@ -41,6 +42,7 @@ body.dark-mode {
   --secondary-mode-color: #fff;
   --secondary-transparent-mode-color: #ccc;
   --hover: #272727;
+  background-color: #000;
   color: white;
 }
 
@@ -98,7 +100,6 @@ i {
 
 .content {
   padding: 20px;
-  margin-left: 250px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -115,5 +116,5 @@ i {
 
 .content section > h1 {
   text-align: center;
-  margin: 20px auto;
+  margin: 50px auto;
 }

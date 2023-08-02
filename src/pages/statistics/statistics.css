@@ -1,0 +1,43 @@
+.h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.statistic-container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--primary-transparent-mode-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+}
+
+.statistics-card {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-mode-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.statistics-card i {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.statistics-card .label {
+  font-weight: bold;
+}
+
+.statistics-card .value {
+  font-size: 18px;
+}

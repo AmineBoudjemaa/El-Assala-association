@@ -1,12 +1,11 @@
-import React from "react";
 import "./sidebar.css";
 import { useSelector } from "react-redux";
-import { getCategoriesNames } from "../../features/categoriesSlice";
+import {  selectAllCategories } from "../../features/categoriesSlice";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Sidebar = ({ toggleSidebar, modalContentRef, isSidebarOpen }) => {
-  const categories = useSelector(getCategoriesNames)
+  const categories = useSelector(selectAllCategories)
   return (
       <AnimatePresence>
         {isSidebarOpen && <motion.aside id="sidebar"
@@ -29,9 +28,9 @@ const Sidebar = ({ toggleSidebar, modalContentRef, isSidebarOpen }) => {
             </div>
             <ul className="sidebar-menu">
               {categories.map(category => (
-                <li key={categories}>
-                  <Link to='category'>
-                    <span> <i className="fas fa-home"></i> {category} </span>
+                <li key={category}>
+                  <Link to={`/${category.path}`}>
+                    <span> <i className={category.icon}></i> {category.category} </span>
                   </Link>
                 </li>
               ))}
