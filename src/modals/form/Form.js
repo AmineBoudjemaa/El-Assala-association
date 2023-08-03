@@ -30,6 +30,7 @@ const AddStudent = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(formData)
     if (addRequestStatus === "idle") {
       try {
         setAddRequestStatus("pending");

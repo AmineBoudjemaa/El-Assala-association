@@ -17,6 +17,21 @@ export const fetchCategories = createAsyncThunk(
   }
 );
 
+export const addNewClass = createAsyncThunk(
+  "categories/addNewClass",
+  async (initial) => {
+    const { id, updatedCategory } = initial;
+    try {
+      const response = await axios.put(`${CATEGORIES_URL}/${id}`, updatedCategory);
+      console.log(response.data)
+      return response.data;
+    } catch (err) {
+      return initial; 
+    }
+  }
+);
+
+
 const categoriesSlice = createSlice({
   name: "categories",
   initialState,
@@ -34,17 +49,25 @@ const categoriesSlice = createSlice({
       .addCase(fetchCategories.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message;
-      });
+      })
+      .addCase(addNewClass.fulfilled, (state, action) => {
+        // const { category, niveauTitle, newClass } = action.payload;
+        const { id} = action.payload;
+        const categories = state.categories.filter((cat) => cat.id !== id);
+        console.log(categories)
+        state.categories = [...categories, action.payload];
+        // console.log([...categories, updatedCategory]);
+      })
   },
 });
 
 const filterByCategory = (categories, category) => {
-  const filtered = categories.filter(cat=>cat.category===category);
+  const filtered = categories.filter(cat => cat.category === category);
   return filtered[0];
 };
 const filterByLevel = (categories, category, level) => {
   const filteredByCategory = filterByCategory(categories, category);
-  const levelObj = filteredByCategory?.niveaux.filter(niv=>niv.title===level)
+  const levelObj = filteredByCategory?.niveaux.filter(niv => niv.title === level)
   if (levelObj) return levelObj[0].classes;
 };
 
@@ -67,7 +90,7 @@ const calculateNbrOfClasses = (categories) => {
 };
 const calculateNbrOfClassesByType = (categories, type) => {
   let totalItem = 0;
-  if(categories[type]){
+  if (categories[type]) {
     const categoriesType = categories[type];
     categoriesType.forEach((item) => {
       if (item.subItems.length === 0) {
@@ -80,7 +103,7 @@ const calculateNbrOfClassesByType = (categories, type) => {
   return totalItem;
 };
 
-const categoriesNames = (categories)=>{
+const categoriesNames = (categories) => {
   const arrayOfNames = categories.map((category) => category.category);
   return arrayOfNames
 }
@@ -91,8 +114,8 @@ export const getCategoriesError = (state) => state.categories.error;
 export const getCategoriesNames = (state) => categoriesNames(state.categories.categories);
 export const selectCategoriesByNiveau = (state, category) =>
   filterByCategory(state.categories.categories, category);
-export const selectClasses = (state,category, level) =>
-  filterByLevel(state.categories.categories,category, level);
+export const selectClasses = (state, category, level) =>
+  filterByLevel(state.categories.categories, category, level);
 export const nbrAllClasses = (state) =>
   calculateNbrOfClasses(state.categories.categories);
 export const nbrClassesByType = (state, type) =>

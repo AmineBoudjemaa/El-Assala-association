@@ -1,7 +1,33 @@
 .sittings.dropdown {
   right: -10px;
+  width: 250px;
 }
 
 .sittings.dropdown:before {
   right: -5px;
+}
+
+.dropdown .notify_item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #dbdaff;
+}
+
+.dropdown .notify_item:last-child {
+  border-bottom: 0px;
+}
+
+.dropdown .notify_item .notify_img i {
+  font-size: 32px;
+  margin: 10px 30px 10px 10px;
+}
+
+.dropdown .notify_item .notify_info p span {
+  margin-left: 5px;
+}
+
+.dropdown .notify_item .notify_info .notify_time {
+  color: #838383;
+  font-size: 12px;
 }

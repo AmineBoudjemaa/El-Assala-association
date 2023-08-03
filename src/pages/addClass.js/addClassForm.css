@@ -1,0 +1,74 @@
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  /* height: 100vh; */
+}
+
+.addClassForm {
+  margin-top: 50px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.addClassForm label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.addClassForm select,
+.addClassForm input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* Style for the <select> element */
+.addClassForm select {
+  appearance: none;
+  background: white;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='%23000000'%3E%3Cpath d='M6 20l26 26 26-26z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px;
+}
+
+/* Style for the <option> elements */
+.addClassForm select option {
+  padding: 8px;
+}
+
+.addClassForm input::placeholder {
+  color: #aaa;
+}
+
+.addClassForm button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.addClassForm button:hover {
+  background-color: #45a049;
+}
+
+/* Additional style for error messages (assuming you handle them in your code) */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

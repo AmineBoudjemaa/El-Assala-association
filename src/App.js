@@ -9,11 +9,13 @@ import Statistics from './pages/statistics/Statistics'
 import Classes from "./pages/classes/Classes";
 import CategoryStatistics from "./pages/categoryStatistics/CategoryStatistics";
 import Class from "./pages/class/Class";
+import AddClassForm from "./pages/addClass.js/AddClassForm";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Statistics />} />
+      <Route path="addClass" element={<AddClassForm />} />
       <Route path=":type">
         <Route index element={<CategoryStatistics />} />
         <Route path=":level">

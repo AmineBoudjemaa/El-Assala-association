@@ -1,9 +1,7 @@
-import "./notification.css";
 import "./sittings.css"
-import not_1 from "../../assets/not_1.png";
-import not_2 from "../../assets/not_2.png";
 import { useRef } from "react";
 import { useDropdown } from "../../customHooks/customHooks";
+import { Link } from "react-router-dom";
 
 const SittingsButton = () => {
   const modalContentRef = useRef(null);
@@ -15,28 +13,26 @@ const SittingsButton = () => {
       </button>
       {isOpen && (
       <div className="dropdown sittings">
-        <div className="notify_item">
+        <Link className="notify_item">
           <div className="notify_img">
-            <img src={not_1} alt="profile_pic" />
+              <i className="fa-solid fa-door-open"></i>
           </div>
           <div className="notify_info">
             <p>
-              Alex commented on<span>Timeline Share</span>
+              Add new class
             </p>
-            <span className="notify_time">10 minutes ago</span>
           </div>
-        </div>
-        <div className="notify_item">
+        </Link>
+        <Link to="addClass" className="notify_item">
           <div className="notify_img">
-            <img src={not_2} alt="profile_pic" />
+              <i className="fa-solid fa-code-branch"></i>
           </div>
           <div className="notify_info">
             <p>
-              Ben hur commented on your<span>Timeline Share</span>
+                Add new category
             </p>
-            <span className="notify_time">55 minutes ago</span>
           </div>
-        </div>
+        </Link>
       </div>
       )}
     </li>
