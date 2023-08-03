@@ -12,7 +12,7 @@ const CategoryStatistics = () => {
         <h1>category of classes</h1>
         <div className="statistic-container">
           {category && category.niveaux.map(niveau => (
-          <Link to={niveau.path} key={niveau.title}>
+          <Link to={niveau.path} key={niveau.title} >
             <div className="statistics-card">
               <i className={category.icon}></i>
                 <span className="label">{niveau.title}</span>

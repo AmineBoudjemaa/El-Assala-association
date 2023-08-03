@@ -1,23 +1,17 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  selectStudentByLevelType,
   getStudentsError,
   getStudentsStatus,
   sortData,
 } from "../../features/studentsSlice";
 import Row from "./Row";
 
-const Table = ({ searchResults, searchTermInput }) => {
+const Table = ({ searchResults, searchTermInput, students }) => {
   const dispatch = useDispatch();
-  const { level, type } = useParams();
   const [sortAsc, setSortAsc] = useState(true);
   const [sortKey, setSortKey] = useState("");
   const error = useSelector(getStudentsError);
-  const students = useSelector((state) =>
-    selectStudentByLevelType(state, type, level)
-  );
   const studentStatus = useSelector(getStudentsStatus);
 
   const handleSortClick = (key) => {

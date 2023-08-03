@@ -29,7 +29,7 @@ const Sidebar = ({ toggleSidebar, modalContentRef, isSidebarOpen }) => {
             <ul className="sidebar-menu">
               {categories.map(category => (
                 <li key={category}>
-                  <Link to={`/${category.path}`}>
+                  <Link to={`/${category.path}`} onClick={toggleSidebar}>
                     <span> <i className={category.icon}></i> {category.category} </span>
                   </Link>
                 </li>

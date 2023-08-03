@@ -8,6 +8,7 @@ import RootLayout from "./layouts/RootLayout";
 import Statistics from './pages/statistics/Statistics'
 import Classes from "./pages/classes/Classes";
 import CategoryStatistics from "./pages/categoryStatistics/CategoryStatistics";
+import Class from "./pages/class/Class";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,9 +16,10 @@ const router = createBrowserRouter(
       <Route index element={<Statistics />} />
       <Route path=":type">
         <Route index element={<CategoryStatistics />} />
-        <Route path=":level" element={<Classes />}>
-        {/* <Route path=":class" element={<Classes />}/> */}
-      </Route>
+        <Route path=":level">
+          <Route index element={<Classes />} />
+          <Route path=":clas" element={<Class />} />
+        </Route>
       </Route>
     </Route>
   )

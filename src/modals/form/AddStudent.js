@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "./addStudent.css";
 import { addNewStudent } from "../../features/studentsSlice";
-import Form from './Form'
 import { useParams } from "react-router-dom";
+import Form from './Form'
+import "./addStudent.css";
 
 const AddStudent = ({ isModalOpen, closeModal, modalContentRef }) => {
-  const { type, level } = useParams();
+  const { type, level, clas } = useParams();
   const [formData, setFormData] = useState({
     firstName: "ssss",
     lastName: "sbb",
@@ -15,6 +15,7 @@ const AddStudent = ({ isModalOpen, closeModal, modalContentRef }) => {
     phoneNumber: "44444444444444",
     type,
     level,
+    class: clas
   });
 
   if (!isModalOpen) return null;

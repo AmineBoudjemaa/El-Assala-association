@@ -3,10 +3,9 @@ import { useParams } from "react-router-dom";
 import AddStudentButton from "../../components/addStudentButton/AddStudentButton";
 
 const TitleSearch = ({ onSearch, setSearchTerm }) => {
-  const { level, type } = useParams();
+  const { level, type, clas } = useParams();
 
   const handleInputChange = (e) => {
-    console.log(e.target.value);
     setSearchTerm(e.target.value);
     onSearch(e.target.value);
   };
@@ -14,7 +13,7 @@ const TitleSearch = ({ onSearch, setSearchTerm }) => {
   return (
     <>
       <h1>
-        {type} {level}
+        {type} {level} {clas?.toLocaleUpperCase()}
       </h1>
       <div className="search-and-add">
         <AddStudentButton />

@@ -129,6 +129,10 @@ export const selectStudentByLevelType = (state, type, level) =>
   state.students.students.filter(
     (student) => student.level === level && student.type === type
   );
+export const selectStudentByLevelTypeAndClass = (state, type, level, clas='') =>
+  state.students.students.filter(
+    (student) => student.level === level && student.type === type && student.class === clas
+  );
 export const nbrAllStudents = (state) => state.students.students?.length;
 export const nbrStudentsByType = (state, type) =>
   state.students.students.filter((student) => student.type === type).length;

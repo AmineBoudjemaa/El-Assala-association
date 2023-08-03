@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./addStudent.css";
 import { useDispatch } from "react-redux";
+import "./addStudent.css";
 
 const AddStudent = ({
   isModalOpen,

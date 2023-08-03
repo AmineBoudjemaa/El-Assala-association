@@ -6,12 +6,10 @@ import { useSelector } from 'react-redux';
 
 const Classes = () => {
   const { type, level } = useParams();
-  console.log(type, level);
   const classes = useSelector((state) => selectClasses(state, type, level))
-  console.log(classes)
   if (classes && classes.length === 0) {
     return (
-      <Class />
+      <Class type={type} level={level} clas={''}/>
     )
   } else {
     return (
@@ -20,7 +18,7 @@ const Classes = () => {
           <h1>category of classes</h1>
           <div className="statistic-container">
             {classes && classes.map(clas => (
-              <Link key={clas}>
+              <Link key={clas} to={clas}>
                 <div className="statistics-card">
                   <i className="fa-solid fa-school-flag"></i>
                   <span className="label">{clas}</span>

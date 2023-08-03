@@ -3,15 +3,15 @@ import Table from "./Table";
 import TitleSearch from "./TitleSearch";
 import "./studentTable.css";
 import { useSelector } from "react-redux";
-import { selectStudentByLevelType } from "../../features/studentsSlice";
+import { selectStudentByLevelTypeAndClass } from "../../features/studentsSlice";
 import { useParams } from "react-router-dom";
 
 const Class = () => {
-  const { level, type } = useParams();
+  const { type, level,  clas } = useParams();
   const [searchTermInput, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const students = useSelector((state) =>
-    selectStudentByLevelType(state, type, level)
+    selectStudentByLevelTypeAndClass(state, type, level, clas)
   );
 
   const handleSearch = (searchTerm) => {
@@ -37,6 +37,7 @@ const Class = () => {
         <Table
           searchResults={searchResults}
           searchTermInput={searchTermInput}
+          students={students}
         />
       </section>
     </main>
