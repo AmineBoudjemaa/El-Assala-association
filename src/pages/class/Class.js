@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { selectStudentByLevelType } from "../../features/studentsSlice";
 import { useParams } from "react-router-dom";
 
-const Members = () => {
+const Class = () => {
   const { level, type } = useParams();
   const [searchTermInput, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -43,4 +43,4 @@ const Members = () => {
   );
 };
 
-export default Members;
+export default Class;

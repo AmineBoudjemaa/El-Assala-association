@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import Statistics from './pages/statistics/Statistics'
-import Class from "./pages/studentTable/Class";
+import Classes from "./pages/classes/Classes";
 import CategoryStatistics from "./pages/categoryStatistics/CategoryStatistics";
 
 const router = createBrowserRouter(
@@ -15,7 +15,9 @@ const router = createBrowserRouter(
       <Route index element={<Statistics />} />
       <Route path=":type">
         <Route index element={<CategoryStatistics />} />
-        <Route path=":level" element={<Class />}/>
+        <Route path=":level" element={<Classes />}>
+        {/* <Route path=":class" element={<Classes />}/> */}
+      </Route>
       </Route>
     </Route>
   )

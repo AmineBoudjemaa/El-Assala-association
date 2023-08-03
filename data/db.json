@@ -108,7 +108,8 @@
       "monthsPurchased": "7",
       "nextPaymentDate": "2023-08-15",
       "type": "CEM",
-      "level": "A1Math"
+      "level": "A1",
+      "class": "math"
     },
     {
       "id": 12,
@@ -119,7 +120,8 @@
       "monthsPurchased": "10",
       "nextPaymentDate": "2023-09-10",
       "type": "CEM",
-      "level": "A2Physic"
+      "level": "A2",
+      "class": "physic"
     },
     {
       "id": 13,
@@ -130,7 +132,8 @@
       "monthsPurchased": "2",
       "nextPaymentDate": "2023-07-30",
       "type": "CEM",
-      "level": "beginner"
+      "level": "A3",
+      "class": "math"
     },
     {
       "id": 14,
@@ -141,7 +144,8 @@
       "monthsPurchased": "7",
       "nextPaymentDate": "2023-08-05",
       "type": "CEM",
-      "level": "A3Science"
+      "level": "A3",
+      "class": "science"
     },
     {
       "firstName": "Boudjemaa",
@@ -162,7 +166,8 @@
       "nextPaymentDate": "2003-03-01",
       "phoneNumber": "44444444444444",
       "type": "lycee",
-      "level": "A1math",
+      "level": "A1",
+      "class": "math",
       "id": 17
     },
     {
@@ -173,7 +178,8 @@
       "nextPaymentDate": "2020-04-07",
       "phoneNumber": "44444444444444",
       "type": "primaire",
-      "level": "A1math",
+      "level": "A1",
+      "class": "math",
       "id": 18
     },
     {
@@ -196,7 +202,19 @@
       "phoneNumber": "44444444444444",
       "type": "CEM",
       "level": "A1",
+      "class": "math",
       "id": 20
+    },
+    {
+      "firstName": "Boudjemaa",
+      "lastName": "Amine",
+      "birthday": "2023-09-01",
+      "monthsPurchased": 3,
+      "nextPaymentDate": "2023-08-16",
+      "phoneNumber": "0668046878",
+      "type": "qoran",
+      "level": "qoran",
+      "id": 21
     }
   ],
   "categories": [
@@ -208,7 +226,7 @@
         {
           "title": "qoran",
           "path": "qoran",
-          "subItems": []
+          "classes": []
         }
       ]
     },
@@ -218,14 +236,14 @@
       "icon": "fa-solid fa-puzzle-piece",
       "niveaux": [
         {
-          "title": "CP 1",
+          "title": "CP1",
           "path": "CP1",
-          "subItems": []
+          "classes": []
         },
         {
-          "title": "CP 2",
+          "title": "CP2",
           "path": "CP2",
-          "subItems": []
+          "classes": []
         }
       ]
     },
@@ -236,35 +254,37 @@
       "niveaux": [
         {
           "title": "A1",
-          "subItems": [
+          "path": "A1",
+          "classes": [
             "math",
             "physic"
           ]
         },
         {
-          "title": "A2 ",
-          "subItems": [
+          "title": "A2",
+          "path": "A2",
+          "classes": [
             " CEM 3",
             " CEM 4"
           ]
         },
         {
           "title": "A3",
-          "subItems": [
+          "classes": [
             "Sub CEM 5",
             "Sub CEM 6"
           ]
         },
         {
           "title": "A4",
-          "subItems": [
+          "classes": [
             "Sub CEM 5",
             "Sub CEM 6"
           ]
         },
         {
           "title": "A5",
-          "subItems": [
+          "classes": [
             "Sub CEM 5",
             "Sub CEM 6"
           ]
@@ -279,7 +299,7 @@
         {
           "title": "A1",
           "path": "A1",
-          "subItems": [
+          "classes": [
             "math",
             "physic"
           ]
@@ -287,7 +307,7 @@
         {
           "title": "A2 ",
           "path": "A2",
-          "subItems": [
+          "classes": [
             " CEM 3",
             " CEM 4"
           ]
@@ -295,7 +315,7 @@
         {
           "title": "A3",
           "path": "A3",
-          "subItems": [
+          "classes": [
             "Sub CEM 5",
             "Sub CEM 6"
           ]
@@ -303,7 +323,7 @@
         {
           "title": "A4",
           "path": "A4",
-          "subItems": [
+          "classes": [
             "Sub CEM 5",
             "Sub CEM 6"
           ]
@@ -317,21 +337,21 @@
       "niveaux": [
         {
           "title": "A1",
-          "subItems": [
+          "classes": [
             "math",
             "physic"
           ]
         },
         {
-          "title": "A2 ",
-          "subItems": [
+          "title": "A2",
+          "classes": [
             "Sub CEM 3",
             "Sub CEM 4"
           ]
         },
         {
           "title": "A3",
-          "subItems": [
+          "classes": [
             "Sub CEM 5",
             "Sub CEM 6"
           ]
@@ -346,17 +366,17 @@
         {
           "title": "english",
           "path": "english",
-          "subItems": []
+          "classes": []
         },
         {
           "title": "francais ",
           "path": "francais ",
-          "subItems": []
+          "classes": []
         },
         {
           "title": "allemand",
           "path": "allemand",
-          "subItems": []
+          "classes": []
         }
       ]
     }

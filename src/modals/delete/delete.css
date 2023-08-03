@@ -2,7 +2,7 @@
   width: 300px;
   text-align: center;
   padding: 20px;
-  background-color: var(--primary-transparent-mode-colorcm);
+  background-color: var(--primary-transparent-mode-color);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

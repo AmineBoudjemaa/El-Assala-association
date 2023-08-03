@@ -38,9 +38,14 @@ const categoriesSlice = createSlice({
   },
 });
 
-const filterByKey = (categories, category) => {
+const filterByCategory = (categories, category) => {
   const filtered = categories.filter(cat=>cat.category===category);
   return filtered[0];
+};
+const filterByLevel = (categories, category, level) => {
+  const filteredByCategory = filterByCategory(categories, category);
+  const levelObj = filteredByCategory?.niveaux.filter(niv=>niv.title===level)
+  if (levelObj) return levelObj[0].classes;
 };
 
 const calculateNbrOfClasses = (categories) => {
@@ -84,8 +89,10 @@ export const selectAllCategories = (state) => state.categories.categories;
 export const getCategoriesStatus = (state) => state.categories.status;
 export const getCategoriesError = (state) => state.categories.error;
 export const getCategoriesNames = (state) => categoriesNames(state.categories.categories);
-export const selectCategoriesByNiveau = (state, Niveau) =>
-  filterByKey(state.categories.categories, Niveau);
+export const selectCategoriesByNiveau = (state, category) =>
+  filterByCategory(state.categories.categories, category);
+export const selectClasses = (state,category, level) =>
+  filterByLevel(state.categories.categories,category, level);
 export const nbrAllClasses = (state) =>
   calculateNbrOfClasses(state.categories.categories);
 export const nbrClassesByType = (state, type) =>

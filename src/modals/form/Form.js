@@ -54,12 +54,12 @@ const AddStudent = ({
   if (!isModalOpen) return null;
   return (
     <div className="modal" id="customer-modal" >
-      <div className="modal-content" >
+      <div className="modal-content"
+        ref={modalContentRef}>
         <span
           className="close-modal-btn"
           id="close-modal-btn"
           onClick={closeModal}
-          ref={modalContentRef}
         >
           &times;
         </span>
