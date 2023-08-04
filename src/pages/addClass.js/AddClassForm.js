@@ -48,7 +48,6 @@ const AddClassForm = () => {
       updatedCategory,
     ];
     const id = selectedCategory.id
-    console.log(updatedCategories)
     dispatch(addNewClass({ id, updatedCategory, updatedCategories }))
     setFormData({
       category: "",

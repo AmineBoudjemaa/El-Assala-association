@@ -254,6 +254,7 @@
   ],
   "categories": [
     {
+      "id": 1,
       "category": "qoran",
       "path": "qoran",
       "icon": "fa-solid fa-book-quran",
@@ -266,6 +267,7 @@
       ]
     },
     {
+      "id": 2,
       "category": "CP",
       "path": "CP",
       "icon": "fa-solid fa-puzzle-piece",
@@ -283,6 +285,7 @@
       ]
     },
     {
+      "id": 3,
       "category": "primaire",
       "path": "primaire",
       "icon": "fa-solid fa-school-flag",
@@ -290,31 +293,48 @@
         {
           "title": "A1",
           "path": "A1",
-          "classes": ["math", "physic"]
+          "classes": [
+            "math",
+            "physic",
+            "science"
+          ]
         },
         {
           "title": "A2",
           "path": "A2",
-          "classes": [" CEM 3", " CEM 4"]
+          "classes": [
+            " CEM 3",
+            " CEM 4"
+          ]
         },
         {
           "title": "A3",
           "path": "A3",
-          "classes": ["Sub CEM 5", "Sub CEM 6"]
+          "classes": [
+            "Sub CEM 5",
+            "Sub CEM 6"
+          ]
         },
         {
           "title": "A4",
           "path": "A4",
-          "classes": ["Sub CEM 5", "Sub CEM 6"]
+          "classes": [
+            "Sub CEM 5",
+            "Sub CEM 6"
+          ]
         },
         {
           "title": "A5",
           "path": "A5",
-          "classes": ["Sub CEM 5", "Sub CEM 6"]
+          "classes": [
+            "Sub CEM 5",
+            "Sub CEM 6"
+          ]
         }
       ]
     },
     {
+      "id": 4,
       "category": "CEM",
       "path": "CEM",
       "icon": "fa-solid fa-school",
@@ -322,45 +342,68 @@
         {
           "title": "A1",
           "path": "A1",
-          "classes": ["math", "physic"]
+          "classes": [
+            "math",
+            "physic"
+          ]
         },
         {
           "title": "A2 ",
           "path": "A2",
-          "classes": [" francais", " arab"]
+          "classes": [
+            " francais",
+            " arab"
+          ]
         },
         {
           "title": "A3",
           "path": "A3",
-          "classes": ["englais", "math"]
+          "classes": [
+            "englais",
+            "math"
+          ]
         },
         {
           "title": "A4",
           "path": "A4",
-          "classes": ["science", "englais"]
+          "classes": [
+            "science",
+            "englais"
+          ]
         }
       ]
     },
     {
+      "id": 5,
       "category": "lycee",
       "path": "lycee",
       "icon": "fa-solid fa-graduation-cap",
       "niveaux": [
         {
           "title": "A1",
-          "classes": ["math", "physic"]
+          "classes": [
+            "math",
+            "physic"
+          ]
         },
         {
           "title": "A2",
-          "classes": ["science", "englais"]
+          "classes": [
+            "science",
+            "englais"
+          ]
         },
         {
           "title": "A3",
-          "classes": [" francais", " arab"]
+          "classes": [
+            " francais",
+            " arab"
+          ]
         }
       ]
     },
     {
+      "id": 6,
       "category": "languages",
       "path": "languages",
       "icon": "fa-solid fa-language",

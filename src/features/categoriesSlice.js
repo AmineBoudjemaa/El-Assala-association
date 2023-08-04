@@ -22,10 +22,12 @@ export const addNewClass = createAsyncThunk(
   async (initial) => {
     const { id, updatedCategory } = initial;
     try {
+      // console.log(id, updatedCategory)
       const response = await axios.put(`${CATEGORIES_URL}/${id}`, updatedCategory);
-      console.log(response.data)
+      // console.log(response.data)
       return response.data;
     } catch (err) {
+      console.log(err)
       return initial; 
     }
   }
